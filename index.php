@@ -44,7 +44,7 @@
         <b>Controle Acadêmico</b>
     </h1>
     <p>Bem vindo ao <b>sistema de controle academico</b>.</p>
-    <p>Aqui você poderá consultar suas <a href="notas.php" alt="notas da turma" target="_self">notas.</a></p>
+    <p>Aqui você poderá consultar sua <a href="nota.php" alt="notas da turma" target="_self">nota.</a></p>
     <p>E também sua <i><a href="frequencia.php" alt="frequencia dos alunos">frequencia</a></i>.</p>
 
     <h2>Menu</h2>
@@ -56,10 +56,7 @@
         <li><a href="nota.php">Notas</a></li>
         <li><a href="frequencia.php">Frequencia</a></li>
     </ul>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-   
-
+    <button onclick="toggleDarkMode()">Claro ou Escuro</button>
     <script>
         function toggleDarkMode() {
             var element = document.body;

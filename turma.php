@@ -40,58 +40,30 @@
     </style>
 </head>
 
-<body id="disciplina">
+<body id="turma">
     <a href="index.php">Início</a>
-    <h1>Disciplinas</h1>
-    <table>
-        <tr>
-            <th>Disciplina</th>
-            <th>Professor(a)</th>
-        </tr>
-        <tr>
-            <td>Programação Web</td>
-            <td>David Tahim (!!O Melhor!!)</td>
-        </tr>
-        <tr>
-            <td>Matemática</td>
-        </tr>
-        <tr>
-            <td>Português</td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-    </table>
+    <h1>Cadastro das Turmas</h1>
+    <form action="/salvar" method="post">
+        <label for="serie">Série:</label><br>
+        <input type="text" id="serie" name="serie"><br>
+        <label for="turma">Turma:</label><br>
+        <input type="text" id="turma" name="turma"><br>
+        <label for="turno">Turno:</label><br>
+        <input type="text" id="turno" name="turno"><br>
+        <input type="submit" value="Salvar">
+        <button type="button" onclick="salvarDados()">Salvar</button>
+    </form>
     <button onclick="toggleDarkMode()">Claro ou Escuro</button>
     <script>
         function toggleDarkMode() {
             var element = document.body;
             element.classList.toggle("dark-mode");
         }
+
+        function salvarDados() {
+            alert("Dados salvos com sucesso!");
+        }
     </script>
-
-
 </body>
 
 </html>

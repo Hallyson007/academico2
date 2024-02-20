@@ -18,12 +18,14 @@
         }
 
         #inicio h1 {
-            font-size: 2.8em; 
+            font-size: 2.8em;
             color: blue;
             font-weight: bold;
         }
 
-        table, tr, td {
+        table,
+        tr,
+        td {
             border: 1px solid black;
             border-collapse: collapse;
             width: 800px;
@@ -57,10 +59,8 @@
 
 
     </table>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
 
-
-
+    <button onclick="toggleDarkMode()">Claro ou Escuro</button>
     <script>
         function toggleDarkMode() {
             var element = document.body;

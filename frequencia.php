@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Controle Acadêmico</title>
     <link rel="stylesheet" href="css/principal.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -38,51 +39,26 @@
             color: white;
         }
     </style>
+
 </head>
 
-<body id="disciplina">
+<body id="frequencia">
     <a href="index.php">Início</a>
-    <h1>Disciplinas</h1>
-    <table>
-        <tr>
-            <th>Disciplina</th>
-            <th>Professor(a)</th>
-        </tr>
-        <tr>
-            <td>Programação Web</td>
-            <td>David Tahim (!!O Melhor!!)</td>
-        </tr>
-        <tr>
-            <td>Matemática</td>
-        </tr>
-        <tr>
-            <td>Português</td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-        </tr>
-    </table>
+    <h1>Cadastro de Frequência</h1>
+    <form action="/salvar" method="post">
+        <label for="nome">Nome do Aluno:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="turma">Turma:</label><br>
+        <input type="text" id="turma" name="turma"><br>
+        <label for="turno">Turno:</label><br>
+        <input type="text" id="turno" name="turno"><br>
+        <label for="serie">Série:</label><br>
+        <input type="text" id="serie" name="serie"><br>
+        <label for="data">Data (Dia/Mês/Ano):</label><br>
+        <input type="date" id="data" name="data"><br>
+        <input type="submit" value="Salvar">
+    </form>
+
     <button onclick="toggleDarkMode()">Claro ou Escuro</button>
     <script>
         function toggleDarkMode() {
@@ -90,8 +66,6 @@
             element.classList.toggle("dark-mode");
         }
     </script>
-
-
 </body>
 
 </html>

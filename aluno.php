@@ -58,15 +58,12 @@
 
 
     </form>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
-
-
-
+    <button onclick="toggleDarkMode()">Claro ou Escuro</button>
     <script>
-    function toggleDarkMode() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-    }
+        function toggleDarkMode() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
     </script>
 </body>
 
